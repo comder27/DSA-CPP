@@ -8,11 +8,16 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
+    
+    int in[n],b[n]; //array of indices
     for(int i=0;i<n;i++){
-        swap(i,a[i]);
+        in[i]=i;
     }
     for(int i=0;i<n;i++){
-        cout<<a[i]<<" ";
+        b[a[i]]=in[i];
+    }
+    for(int i=0;i<n;i++){
+        cout<<b[i]<<" ";
     }
     return 0;
 }
